@@ -225,7 +225,7 @@ p {
 
 /* From Mobile View To Tablet View */
 
-@media (min-width: 769px) {
+@media (max-width: 769px) {
   h1 {
     font-size: var(--fs-2);
   }
@@ -246,7 +246,7 @@ p {
   .header__description-content {
     padding: 0;
   }
-  /*.section__content{
+  .section__content{
     max-width: 535px;
     height: 650px;
     margin: 3.5rem auto;
@@ -258,7 +258,7 @@ p {
   .section__description{
     max-width: 319px;
     text-align: center;
-  }*/
+  }
 
 }
 
