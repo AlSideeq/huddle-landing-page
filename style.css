@@ -8,10 +8,10 @@
   --primary-white: #fff;
 
   /* FONT SIZES*/
-  /* --fs-12: 12px; */
+  --fs-12: 12px;
   --fs-13: 13px;
   --fs-14: 14px;
-  /*--fs-15: 15px;*/
+  --fs-15: 15px;
   --fs-18: 18px;
   --fs-19: 19px;
   --fs-2: 2rem;
@@ -95,6 +95,9 @@ p {
 .my-2 {
   margin: 2rem 0;
 }
+.my-3 {
+  margin: 3rem 0;
+}
 .my-1 {
   margin: 1.5rem 0;
 }
@@ -154,8 +157,8 @@ p {
 .flex-column {
   flex-direction: column;
 }
-.flex-row {
-  flex-direction: row-reverse;
+.flex-row{
+  flex-direction: row;
 }
 
 /* BLOCK ELMENTS CLASSES */
@@ -237,21 +240,92 @@ p {
   text-align: center;
 }
 
+.small__card{
+  border-radius: 15px;
+  padding: 2rem 1.3rem;
+  background-color: var(--primary-white);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.small__card-content{
+  padding: 16px 0;
+}
 .card__content > h3 {
   color: var(--neutral-dark-cyan);
 }
-
 .card__content > p {
-  font-size: var(--fs-14);
+  font-size: var(--body-font-size);
   line-height: 22px;
   color: var(--neutral-grayish-blue);
 }
+.small__card-content > h3{
+  font-size: 1.1rem;
+}
+.small__card-content > .button{
+  padding: 7px 1rem;
+  font-size: var(--fs-12);
+}
+footer{
+  background: var(--neutral-dark-cyan);
+}
+.info__content{
+  padding: 13rem 0;
+}
+.info__logo{
+  background: #fff;
+}
+.info__description{
+  max-width: 73%;
+  margin-top: 2rem;
+  display: inline;
+}
+.info__icons > img{
+  max-width: 5%;
+  height: 100%;
+  margin-right: 10px;
+}
+.info__description > p{
+  color:var(--primary-white);
+  font-size: var(--fs-12);
+  margin-left: 25px;
+  margin-top: -1.3rem;
+}
+.info__nav{
+  margin-top: 3rem;
+}
+ul{
+  list-style-type: none; 
+}
+li{
+  color: var(--primary-white);
+  font-family: var(--open-sans);
+  font-size: var(--fs-14);
+  margin-bottom: 20px;
+}
+/*.footer__container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.footer__content{
+  margin: 9rem 1rem;
+}
+.footer__info{
+  max-width: 80%;
+}
+.image__icons{
+  max-width: 100%;
+  margin: 0 10px;
+}
+.footer__info > p {
+  font-size: var(--fs-12);
+  color: var(--primary-white);
+}*/
 
 /* MEDIA QUERIES */
 
 /* From Mobile View To Tablet View */
-
-@media (max-width: 769px) {
+@media (min-width: 769px) {
   h1 {
     font-size: var(--fs-2);
   }
@@ -318,6 +392,7 @@ p {
 @media (min-width: 900px) {
   section {
     padding: 6rem 0;
+  
   }
 
   .card {
@@ -327,6 +402,7 @@ p {
   .card__content {
     text-align: unset;
   }
+  
 }
 
 /* From Desktop View And Up */
