@@ -272,7 +272,10 @@ footer{
   padding: 13rem 0;
 }
 .info__logo{
-  background: #fff;
+  filter: brightness(0) invert(1);
+  max-width: 50%;
+  height: auto;
+
 }
 .info__description{
   max-width: 73%;
