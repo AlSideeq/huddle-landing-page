@@ -70,6 +70,7 @@ section {
 
 section > div.container {
   gap: 2.7rem;
+  position: relative;
 }
 
 h1 {
@@ -101,8 +102,8 @@ ul {
 li {
   color: var(--primary-white);
   font-family: var(--open-sans);
-  font-size: var(--fs-14);
-  margin-bottom: 20px;
+  font-size: var(--fs-18);
+  margin-bottom: 12px;
 }
 
 /* UTILITIES CLASSES */
@@ -270,6 +271,8 @@ li {
 }
 
 .small__card {
+  position: inherit;
+  bottom: -138px;
   border-radius: 15px;
   padding: 2rem 1.3rem;
   background-color: var(--primary-white);
@@ -293,10 +296,11 @@ li {
 
 .small__card-content > h3 {
   font-size: 1.1rem;
+  margin-bottom: 15px;
 }
 
 .small__card-content > .button {
-  padding: 7px 1rem;
+  padding: 12px 2rem;
   font-size: var(--fs-12);
 }
 
@@ -324,31 +328,33 @@ li {
   line-height: 25px;
 }
 
-.info__nav {
+.info__about {
   margin-top: 3rem;
 }
 
 .info__social {
   text-align: center;
+  margin-top: 2.3rem;
 }
 
 .fab {
+  width: 18px;
+  height: 18px;
   max-width: 100%;
   color: var(--primary-white);
-  margin: 0 10px;
+  margin: 0 5px;
   background: var(--neutral-dark-cyan);
   padding: 10px;
   border-radius: 50%;
   font-size: 1.3rem;
   border: 1px solid var(--primary-white);
-  margin-right: 10px;
+  text-align: center;
 }
 
 .info__copy {
   color: var(--primary-white);
-  font-size: var(--fs-14);
+  font-size: var(--fs-12);
   margin-top: 1rem;
-  font-family: var(--open-sans);
 }
 
 /* MEDIA QUERIES */
@@ -435,6 +441,56 @@ li {
     display: flex;
     flex-direction: row;
   }
+
+  .small__card{
+    position: inherit;
+    bottom: -184px;
+    width: 60%;
+    left: 164px;
+    max-width: 100%;
+  }
+
+  .small__card-content > h3 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .small__card-content > .button {
+    padding: 20px 6rem;
+  }
+
+  .info__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+
+  .info__description{
+    width: 400px;
+  }
+  
+  .info__about{
+    flex-direction: row;
+  }
+
+  .info__nav{
+    margin: 0 2rem;
+  }
+  
+  .info__social {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.6rem;
+    justify-content: left;
+  }
+
+  .info__copy {
+    margin-top: 6.5rem;
+    padding-left: 15px;
+  }
+
+
 }
 
 /* From Desktop View And Up */
@@ -465,5 +521,11 @@ li {
   .card__row {
     display: flex;
     flex-direction: row;
+  }
+
+  .small__card{
+    bottom: -215px;
+    left: 210px;
+    max-width: 100%;
   }
 }
