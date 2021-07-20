@@ -104,6 +104,7 @@ li {
   font-family: var(--open-sans);
   font-size: var(--fs-18);
   margin-bottom: 12px;
+  line-height: 26px;
 }
 
 /* UTILITIES CLASSES */
@@ -329,7 +330,7 @@ li {
 }
 
 .info__about {
-  margin-top: 3rem;
+  margin-top: 3.8rem;
 }
 
 .info__social {
@@ -338,15 +339,15 @@ li {
 }
 
 .fab {
-  width: 18px;
-  height: 18px;
+  width: 12px;
+  height: 12px;
   max-width: 100%;
   color: var(--primary-white);
   margin: 0 5px;
   background: var(--neutral-dark-cyan);
   padding: 10px;
   border-radius: 50%;
-  font-size: 1.3rem;
+  font-size: var(--fs-12);
   border: 1px solid var(--primary-white);
   text-align: center;
 }
@@ -429,6 +430,10 @@ li {
     padding: 6rem 0;
   }
 
+  section > div.container {
+    margin-top: 5rem;
+  }
+
   .card {
     flex-direction: row-reverse;
   }
@@ -481,12 +486,12 @@ li {
     text-align: left;
     display: flex;
     flex-direction: column;
-    margin-top: 3.6rem;
+    margin-top: 4rem;
     justify-content: left;
   }
 
   .info__copy {
-    margin-top: 6.5rem;
+    margin-top: 10rem;
     padding-left: 15px;
   }
 
@@ -523,9 +528,13 @@ li {
     flex-direction: row;
   }
 
+  .card__row > .card__illustration {
+    margin: 0 auto 0 7%;
+  }
+
   .small__card{
     bottom: -215px;
-    left: 210px;
+    left: 220px;
     max-width: 100%;
   }
 }
